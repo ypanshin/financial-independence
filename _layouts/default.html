@@ -27,7 +27,7 @@
   
     <!-- Primary Meta Tags -->
     <meta name="title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keyword" content="FI, FIRE, Financial Independence, Personal Finance, Finance">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +35,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
-    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:image"
         content="{{ site.url }}{% if page.image.feature %}{{page.image.feature}}{% else %}/assets/icons/icon-1024x1024.png{% endif %}">
 
@@ -43,7 +43,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
     <meta property="twitter:title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
-    <meta property="twitter:description" content="{{ site.description }}">
+    <meta property="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
     <meta property="twitter:image" content="{{ site.url }}{% if page.image.feature %}{{page.image.feature}}{% else %}/assets/icons/icon-1024x1024.png{% endif %}">
 
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
