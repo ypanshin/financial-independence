@@ -1,0 +1,30 @@
+<div
+    class="post type-post status-publish format-standard {% if post.image.feature %}has-post-thumbnail{% endif %} hentry excerpt zoom full-without-featured {% cycle 'odd', 'even' %}">
+    <a class="featured-image-link" href="{{ post.url }}">
+        {% if post.image.feature %}
+        <div class='featured-image lazy lazy-bg-image' data-background='{{ post.image.feature }}'>
+        </div>
+        {% endif %}
+    </a>
+    <div class="excerpt-container">
+        <div class="excerpt-meta"> <span class="date">{{ post.date | date: "%e %b %Y" }}</span> <span> / </span> <span
+                class="author" title="Posts by {{ post.author }}">{{ post.author }}</span>
+            {% for category in post.categories %}
+            <span> / </span><span class="category"> <a href="/category/{{ category }}">{{ category }}</a></span>
+            {% endfor %}
+        </div>
+        <div class='excerpt-header'>
+            <h2 class='excerpt-title'>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+        </div>
+        <div class='excerpt-content'>
+            <article>
+                <p>{{ post.excerpt }}</p>
+                <div class="more-link-wrapper"><a class="more-link" href="{{ post.url }}">Read
+                        the post<span class="screen-reader-text">{{ post.title }}</span></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>

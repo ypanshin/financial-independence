@@ -1,0 +1,26 @@
+title: "Financial Independence"
+description: "A blog about financial independence and personal finance."
+excerpt_separator: <!--more-->
+plugins:
+  - jekyll-assets
+assets:
+  sources: 
+    - assets/css
+    - assets/images
+    - assets/js
+  digest: false
+collections:
+  category:
+    output: true
+    permalink: /:collection/:name
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
+exclude:
+  - .asset-cache
+  - .history

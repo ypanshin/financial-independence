@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class='archive-header'>
+    <h1>Category: {{page.name}}</h1>
+</div>
+<div id="loop-container" class="loop-container">
+
+    {% assign name = page.name | downcase%}
+    {% for post in site.categories[name] %}
+        {% if post.published %}
+            {% include post-preview.html %}
+        {% endif %}
+    {% endfor %}
+
+</div>

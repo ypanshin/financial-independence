@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9" lang="en-US"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <title>
+        Budgific: {{ site.title }}
+        {% if page.title %}
+        | {{page.title}}
+        {% endif %}
+    </title>
+    <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/custom-style.css" type="text/css" />
+    <meta name='robots' content='noindex,follow' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="template" content="Tracks 1.70" />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important
+        }
+    </style>
+    <link rel='stylesheet' id='ct-tracks-google-fonts-css'
+        href='https://fonts.googleapis.com/css?family=Raleway%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=5.2.2'
+        type='text/css' media='all' />
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <noscript>
+        <style id="rocket-lazyload-nojs-css">
+            .rll-youtube-player,
+            [data-lazy-src] {
+                display: none !important
+            }
+        </style>
+    </noscript>
+</head>
+
+<body id="tracks" class="home blog ct-body standard">
+    <div id="overflow-container" class="overflow-container"> <a class="skip-content" href="#main">Skip to content</a>
+        <header id="site-header" class="site-header" role="banner">
+            <div class='top-navigation'>
+                <div class='container'>
+                    <div id="menu-secondary" class="menu-container menu-secondary" role="navigation"> <button
+                            id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i
+                                class="fas fa-plus"></i></button>
+                        <div class="menu">
+                            <ul id="menu-secondary-items" class="menu-secondary-items">
+                                {% for category in site.categories %}
+                                {% capture name %}{{ category | first }}{% endcapture %}
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="/category/{{ name }}">{{
+                                            name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class='search-form-container'> <button id="search-icon" class="search-icon"> <i
+                                class="fas fa-search"></i> </button>
+                        <form role="search" method="get" class="search-form"
+                            action="/"> <label
+                                class="screen-reader-text">Search for:</label> <input type="search" class="search-field"
+                                placeholder="Search&#8230;" value="" name="s" title="Search for:" /> <input
+                                type="submit" class="search-submit" value='Go' /></form>
+                    </div> -->
+                    <!-- <ul class="social-media-icons">
+                        <li> <a class="twitter" target="_blank" href="https://twitter.com"> <i
+                                    class="fab fa-twitter-square" title="twitter"></i> <span
+                                    class="screen-reader-text">twitter</span> </a></li>
+                        <li> <a class="facebook" target="_blank" href="https://facebook.com"> <i
+                                    class="fab fa-facebook-square" title="facebook"></i> <span
+                                    class="screen-reader-text">facebook</span> </a></li>
+                        <li> <a class="instagram" target="_blank" href="https://instagram.com"> <i
+                                    class="fab fa-instagram" title="instagram"></i> <span
+                                    class="screen-reader-text">instagram</span> </a></li>
+                        <li> <a class="pinterest" target="_blank" href="https://pinterest.com"> <i
+                                    class="fab fa-pinterest-square" title="pinterest"></i> <span
+                                    class="screen-reader-text">pinterest</span> </a></li>
+                        <li> <a class="rss" target="_blank" href="/feed/">
+                                <i class="fas fa-rss" title="rss"></i> <span class="screen-reader-text">rss</span> </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="container">
+                <div id="title-info" class="title-info">
+                    <div id='site-title' class='site-title'><a href='/'>{{ site.title }}</a></div>
+                </div> <button id="toggle-navigation" class="toggle-navigation"> <i class="fas fa-bars"></i> </button>
+                <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+                <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+                    <p class="site-description"> {{ site.description }} </p>
+                    <div class="menu">
+                        <!-- <ul id="menu-primary-items" class="menu-primary-items">
+                            <li id="menu-item-2484"
+                                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-2484">
+                                <a href="https://www.competethemes.com/tracks-live-demo/" aria-current="page">Home</a>
+                            </li>
+                            <li id="menu-item-2281"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2281"><a
+                                    href="https://www.competethemes.com/tracks-live-demo/about/">About</a></li>
+                            <li id="menu-item-2282"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2282">
+                                <a href="https://www.competethemes.com/tracks-live-demo/sample-page/">Sample</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-2490"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2490">
+                                        <a
+                                            href="https://www.competethemes.com/tracks-live-demo/gallery-post/">Gallery</a>
+                                    </li>
+                                    <li id="menu-item-2485"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2485">
+                                        <a
+                                            href="https://www.competethemes.com/tracks-live-demo/category/design/">Category</a>
+                                    </li>
+                                    <li id="menu-item-2486"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2486">
+                                        <a href="https://www.competethemes.com/tracks-live-demo/tag/hipster/">Tag</a>
+                                    </li>
+                                    <li id="menu-item-2487"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2487">
+                                        <a
+                                            href="https://www.competethemes.com/tracks-live-demo/author/admin/">Author</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-2280"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2280"><a
+                                    href="https://www.competethemes.com/tracks-live-demo/contact/">Contact</a></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main" class="main" role="main">
+            {{ content }}
+            <!-- <nav class="navigation pagination" role="navigation">
+                <h2 class="screen-reader-text">Posts navigation</h2>
+                <div class="nav-links"><span aria-current='page' class='page-numbers current'>1</span> <a
+                        class='page-numbers' href='https://www.competethemes.com/tracks-live-demo/page/2/'>2</a> <a
+                        class="next page-numbers" href="https://www.competethemes.com/tracks-live-demo/page/2/">Next</a>
+                </div>
+            </nav> -->
+        </div>
+        <footer id="site-footer" class="site-footer" role="contentinfo">
+            <!-- <div id="menu-footer" class="menu-container menu-footer" role="navigation">
+                <div class="menu">
+                    <ul id="menu-footer-items" class="menu-footer-items">
+                        <li id="menu-item-2432"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2432"><a
+                                href="https://www.competethemes.com/tracks-live-demo/sample-page/">Sample Page</a></li>
+                        <li id="menu-item-2433"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2433"><a
+                                href="https://www.competethemes.com/tracks-live-demo/contact/">Contact Me</a></li>
+                        <li id="menu-item-2434"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2434"><a
+                                href="https://www.competethemes.com/tracks-live-demo/about/">About Tracks</a></li>
+                        <li id="menu-item-2436"
+                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-2436">
+                            <a href="/tracks-live-demo/" aria-current="page">Blog</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- <ul class="social-media-icons">
+                <li> <a class="twitter" target="_blank" href="https://twitter.com"> <i class="fab fa-twitter-square"
+                            title="twitter"></i> <span class="screen-reader-text">twitter</span> </a></li>
+                <li> <a class="facebook" target="_blank" href="https://facebook.com"> <i class="fab fa-facebook-square"
+                            title="facebook"></i> <span class="screen-reader-text">facebook</span> </a></li>
+                <li> <a class="instagram" target="_blank" href="https://instagram.com"> <i class="fab fa-instagram"
+                            title="instagram"></i> <span class="screen-reader-text">instagram</span> </a></li>
+                <li> <a class="pinterest" target="_blank" href="https://pinterest.com"> <i
+                            class="fab fa-pinterest-square" title="pinterest"></i> <span
+                            class="screen-reader-text">pinterest</span> </a></li>
+                <li> <a class="rss" target="_blank" href="https://www.competethemes.com/tracks-live-demo/feed/"> <i
+                            class="fas fa-rss" title="rss"></i> <span class="screen-reader-text">rss</span> </a></li>
+            </ul> -->
+            <div class="disclaimer">
+                {% include disclaimer.html %}
+            </div>
+            <div class="design-credit">
+                <p> <a target="_blank" href="https://www.competethemes.com/tracks/">Tracks WordPress Theme</a> by
+                    Compete Themes.</p>
+                <p> <a target="_blank" href="https://curlydesigner.com">Images by Curly Designer</a></p>
+            </div>
+        </footer><button id="return-top" class="return-top"> <i class="fas fa-arrow-up"></i> </button>
+    </div>
+    <script>window.lazyLoadOptions = { elements_selector: "img[data-lazy-src],.rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }; window.addEventListener('LazyLoad::Initialized', function (e) {
+            var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
+                var observer = new MutationObserver(function (mutations) {
+                    var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) {
+                        for (i = 0; i < mutation.addedNodes.length; i++) {
+                            if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { return }
+                            if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { return }
+                            images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1 }
+                            if (is_iframe) { iframe_count += 1 }
+                        }
+                    }); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
+                }); var b = document.getElementsByTagName("body")[0]; var config = { childList: !0, subtree: !0 }; observer.observe(b, config)
+            }
+        }, !1)</script>
+    <script data-no-minify="1" async src="/assets/js/lazyload.min.js"></script>
+    <script src="/assets/js/code.js" data-minify="1"></script>
+</body>
+
+</html>

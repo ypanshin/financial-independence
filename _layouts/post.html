@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div id="loop-container" class="loop-container">
+    <div
+        class="post type-post status-publish format-standard {% if page.image.feature %}has-post-thumbnail{% endif %} hentry category-standard tag-blogging-for-fun tag-tagalicious entry full-without-featured">
+        <div data-bg="url({{ page.image.feature }})" class='featured-image rocket-lazyload' style=''></div>
+        <div class="entry-meta">
+            <span class="date">{{ page.date | date: "%e %b %Y" }}</span> <span> / </span> <span class="author"
+                title="Posts by {{ page.author }}">{{ page.author }}</span>
+            {% for category in page.categories %}
+            <span> / </span><span class="category"> <a href="/category/{{ category }}">{{ category }}</a></span>
+            {% endfor %}
+        </div>
+        <div class='entry-header'>
+            <h1 class='entry-title'>{{ page.title }}</h1>
+        </div>
+        <div class="entry-container">
+            <div class="entry-content">
+                <article>
+                    {{ content }}
+                </article>
+            </div>
+            <div class='entry-meta-bottom'>
+                <nav class="further-reading">
+                    {% if page.previous.url %}
+                    <p class="prev"> <span>Previous Post</span> <a
+                            href="{{page.previous.url}}">{{ page.previous.title }}</a></p>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <p class="next"> <span>Next Post</span> <a href="{{page.next.url}}">{{ page.next.title }}</a></p>
+                    {% endif %}
+                </nav>
+                <div class="entry-categories">
+                    <p><span>Categories</span>
+                        {% for category in page.categories %}
+                        <a href="/category/{{ category }}" title="View all posts in {{ category }}">{{ category }}</a>
+                        {% endfor %}
+                </div>
+                <!-- <div class="entry-tags">
+                    <p><span>Tags</span><a href="#"
+                            title="View all posts tagged blogging for fun">blogging for fun</a> <a
+                            href="#"
+                            title="View all posts tagged tagalicious">tagalicious</a></p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
