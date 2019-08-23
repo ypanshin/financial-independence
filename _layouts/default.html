@@ -212,6 +212,17 @@
         }, !1)</script>
     <script data-no-minify="1" async src="/assets/js/lazyload.min.js"></script>
     <script src="/assets/js/code.js" data-minify="1"></script>
+    {% if jekyll.environment == "production" %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146432121-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-146432121-1');
+    </script>
+    {% endif %}
 </body>
 
 </html>
