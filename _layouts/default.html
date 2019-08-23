@@ -6,17 +6,46 @@
 
 <head>
     <title>
-        Budgific: {{ site.title }}
-        {% if page.title %}
-        | {{page.title}}
-        {% endif %}
+        Budgific: {{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}
     </title>
+    <meta charset="UTF-8" />
+
     <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" type="text/css" />
-    <meta name='robots' content='noindex,follow' />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="template" content="Tracks 1.70" />
+
+    <!-- add to home screen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="manifest" href="/assets/manifest.json">
+    <meta name="theme-color" content="#111">
+
+    <link rel="shortcut icon" type="image/png" href="/assets/icons/icon-32x32.png"/>
+    <link rel="apple-touch-icon" href="/assets/icons/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/assets/icons/icon-192x192.png">
+  
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keyword" content="FI, FIRE, Financial Independence, Personal Finance, Finance">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image"
+        content="{{ site.url }}{% if page.image.feature %}{{page.image.feature}}{% else %}/assets/icons/icon-1024x1024.png{% endif %}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
+    <meta property="twitter:description" content="{{ site.description }}">
+    <meta property="twitter:image" content="{{ site.url }}{% if page.image.feature %}{{page.image.feature}}{% else %}/assets/icons/icon-1024x1024.png{% endif %}">
+
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <style type="text/css">
         img.wp-smiley,
@@ -36,9 +65,6 @@
         href='https://fonts.googleapis.com/css?family=Raleway%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=5.2.2'
         type='text/css' media='all' />
 
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <noscript>
         <style id="rocket-lazyload-nojs-css">
             .rll-youtube-player,
