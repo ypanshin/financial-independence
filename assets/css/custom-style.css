@@ -3,3 +3,8 @@
     max-width: 1280px;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .main a img { width: 100%; }
+}
+
