@@ -2,7 +2,7 @@
 layout: post
 title: Transfer Pension
 published: true
-author: Yura
+author: Budgific Team
 categories:
     - misc
 permalink: /misc/transfer-pension-to-canada.html

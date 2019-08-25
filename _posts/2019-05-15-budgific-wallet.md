@@ -2,7 +2,7 @@
 layout: post
 title: Budgific wallet
 published: true
-author: Yura
+author: Budgific Team
 tags:
     - Budgific
     - Wallet
