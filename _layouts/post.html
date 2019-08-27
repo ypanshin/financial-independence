@@ -43,7 +43,67 @@ layout: default
                             href="#"
                             title="View all posts tagged tagalicious">tagalicious</a></p>
                 </div> -->
+                {% include author.html %}
             </div>
         </div>
+        <section id="comments" class="comments">
+            <ol class="comment-list">
+                {% if page.comments %}
+                {% for comment in page.comments %}
+                <li class="comment even thread-even depth-1">
+                    <article class="comment">
+                        <div class="comment-author"> <img alt=''
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2072%2072'%3E%3C/svg%3E"
+                                data-lazy-srcset='https://secure.gravatar.com/avatar/39f7e57ccd31847dc1a4bfb2ee1cd596?s=144&#038;d=mm&#038;r=g 2x'
+                                class='avatar avatar-72 photo' height='72' width='72'
+                                data-lazy-src="https://secure.gravatar.com/avatar/39f7e57ccd31847dc1a4bfb2ee1cd596?s=72&#038;d=mm&#038;r=g" /><noscript><img
+                                    alt=''
+                                    src='https://secure.gravatar.com/avatar/39f7e57ccd31847dc1a4bfb2ee1cd596?s=72&#038;d=mm&#038;r=g'
+                                    srcset='https://secure.gravatar.com/avatar/39f7e57ccd31847dc1a4bfb2ee1cd596?s=144&#038;d=mm&#038;r=g 2x'
+                                    class='avatar avatar-72 photo' height='72' width='72' /></noscript>
+                            <div>
+                                <div class="author-name"><a href='http://commenter.url' rel='external nofollow'
+                                        class='url'>{{ comment.author }}</a></div>
+                                <div class="comment-date">{{ comment.date | date: "%e %b %Y" }}</div> <a rel='nofollow'
+                                    class='comment-reply-link'
+                                    href='/tracks-live-demo/this-is-a-standard-post/?replytocom=54#respond'
+                                    data-commentid="54" data-postid="1969" data-belowelement="comment-54"
+                                    data-respondelement="respond" aria-label='Reply to {{ comment.author }}'>Reply</a>
+                            </div>
+                        </div>
+                        <div class="comment-content">
+                            {{ comment.content }}
+                        </div>
+                    </article>
+                </li>
+                {% endfor %}
+                {% endif %}
+            </ol>
+            <div id="respond" class="comment-respond">
+                <h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+                            id="cancel-comment-reply-link" href="/tracks-live-demo/this-is-a-standard-post/#respond"
+                            style="display:none;">Cancel reply</a></small></h3>
+                <form action="https://formspree.io/{{ site.email }}" method="POST" class="comment-form" novalidate>
+                    <input type="hidden" autocomplete="off" autocorrect="off" name="post-title"
+                        value="{{ page.title }}" />
+                    <input type="hidden" autocomplete="off" autocorrect="off" name="post-url" value="{{ page.url }}" />
+                    <p class="comment-notes"><span id="email-notes">Your email address will not be
+                            published.</span> Required fields are marked <span class="required">*</span></p>
+                    <p class="comment-form-comment"> <label for="comment" class="screen-reader-text">Your
+                            Comment</label><textarea required placeholder="Enter Your Comment&#8230;" id="comment"
+                            name="comment" cols="45" rows="8" aria-required="true" required></textarea></p>
+                    <p class="comment-form-author"> <label for="author" class="screen-reader-text">Your
+                            Name</label> <input placeholder="Your Name*" id="name" name="name" type="text" value=""
+                            size="30" aria-required='true' required /></p>
+                    <!-- <p class="comment-form-email"> <label for="email" class="screen-reader-text">Your
+                            Email</label> <input placeholder="Your Email*" id="email" name="email" type="email" value=""
+                            size="30" aria-required='true' /></p> -->
+                    <!-- <p class="comment-form-url"> <label for="url" class="screen-reader-text">Your Website
+                            URL</label> <input placeholder="Your URL" id="url" name="url" type="url" value=""
+                            size="30" /></p> -->
+                    <p class="form-submit"><input type="submit" class="submit" value="Post Comment" /></p>
+                </form>
+            </div>
+        </section>
     </div>
 </div>

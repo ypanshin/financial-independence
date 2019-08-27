@@ -8,6 +8,10 @@ categories:
 permalink: /misc/transfer-pension-to-canada.html
 image:
     feature: /assets/posts/2019-08-22-transfer-pension-to-canada/feature.jpg
+comments:
+    # - author: Comment Author
+    #   date: 2019-08-22
+    #   content: Comment content
 ---
 Since I come to Canada I looked for a way to transfer my pension plan from origin country. Canada's RRSP is more flexible than a pension plan in my origin country.
 <!--more-->
@@ -46,8 +50,8 @@ The RRSP contribution limit for 2019 is 18% of the earned income as was reported
 ***Tip:** The pension transfer is not affected by the contribution limit and will not take the available contribution room.*
 
 **Pre-requirements for the pension transfer:**
-- Your country of origin should have tax treaty with Canada. For example for Israel it is explained in ARTICLE 17
-Pensions and Annuities of [Canada–Israel Tax Convention Act, 2016](https://laws-lois.justice.gc.ca/eng/acts/C-6.42/FullText.html)
+- Your country of origin should have tax treaty with Canada. For example for Israel it is explained under section 3 ARTICLE 17
+Pensions and Annuities of [Canada–Israel Tax Convention Act, 2016](https://laws-lois.justice.gc.ca/eng/acts/C-6.42/FullText.html){:target="_blank"}
 - The pension transfer should happen in one tax year. You should withdraw the pension money from origin country and deposit to RRSP in the same tax year or not after 60 days of the tax year-end.
 - The foreign pension should be contributed before you become a resident of Canada for tax purposes.
 - You should have enough federal payable taxes to get the origin country taxes back. For example, you should pay in origin country $10K taxes when you withdraw your pension, so you have to have federal payable taxes in Canada more or equal to $10K. CRA does not return money that you did not pay to CRA.
