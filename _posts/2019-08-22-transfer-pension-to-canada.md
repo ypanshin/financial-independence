@@ -72,7 +72,7 @@ Pensions and Annuities of [Canada–Israel Tax Convention Act, 2016](https://law
 
 **Fill Canadian taxes**
 
-I did not try the following steps as I used accountant service to fill my Canadian taxes.
+I did not try the following steps as my accountant Maya Schwartz ([MyTaxAdviser](https://mytaxadviser.ca){:target="_blank"}) file my tax return for me.
 - Include the whole pension amount include foreign taxes that you deposited to your RRSP as income for the year. Line 115 of Federal Tax return form - Other pensions and superannuation.
 - Deduct the RRSP amount from income: line 208 - RRSP deduction. And on line 11, Schedule 7, mark that the RRSP is a transfer. This will say that the RRSP amount should not affect your contribution limits.
 - Receiving Foreign Tax Credit.
