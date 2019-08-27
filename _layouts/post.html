@@ -83,7 +83,7 @@ layout: default
                 <h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
                             id="cancel-comment-reply-link" href="/tracks-live-demo/this-is-a-standard-post/#respond"
                             style="display:none;">Cancel reply</a></small></h3>
-                <form action="https://formspree.io/{{ site.email }}" method="POST" class="comment-form" novalidate>
+                <form action="https://formspree.io/{{ site.email }}" method="POST" class="comment-form">
                     <input type="hidden" autocomplete="off" autocorrect="off" name="post-title"
                         value="{{ page.title }}" />
                     <input type="hidden" autocomplete="off" autocorrect="off" name="post-url" value="{{ page.url }}" />
