@@ -1,5 +1,6 @@
 title: "Financial Independence"
 description: "A blog about financial independence and personal finance."
+email: info@budgific.com
 excerpt_separator: <!--more-->
 plugins:
   - jekyll-assets
