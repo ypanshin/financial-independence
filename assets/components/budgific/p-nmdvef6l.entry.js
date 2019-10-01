@@ -1,0 +1,1 @@
+import{r as o,h as t}from"./p-b55b59e7.js";const i=class{constructor(t){o(this,t)}connectedCallback(){const o=document.querySelector("ion-popover");this.message=o.componentProps.message}render(){return t("div",{innerHTML:this.message})}static get style(){return"div{padding:0 10px;font-family:Roboto,Helvetica Neue,sans-serif}"}};export{i as budgific_ig_info_popover};

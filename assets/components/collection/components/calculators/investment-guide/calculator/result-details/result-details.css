@@ -1,0 +1,20 @@
+.formula{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+    align-items: center;
+}
+.value{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sign{
+    font-size: 160%;
+}
+.name{
+    font-size: 50%;
+}
+.one-line{
+    line-height: 26px;
+}

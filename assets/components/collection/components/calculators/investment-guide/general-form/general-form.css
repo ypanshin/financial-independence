@@ -1,0 +1,14 @@
+.ion-invalid {
+    --border-color: var(--highlight-color-invalid);
+}
+
+
+.ion-color-danger {
+    color: var(--ion-color-danger);
+}
+
+.error-item {
+    --min-height: 20px;
+    font-size: 80%;
+    color: var(--ion-color-danger);
+}

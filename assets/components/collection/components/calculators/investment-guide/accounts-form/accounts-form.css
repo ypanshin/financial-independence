@@ -1,0 +1,8 @@
+
+.ion-invalid {
+    --border-color: var(--highlight-color-invalid);
+}
+
+.ion-color-danger{
+    color: var(--ion-color-danger);
+}
