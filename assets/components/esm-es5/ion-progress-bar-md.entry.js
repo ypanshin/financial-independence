@@ -1,4 +1,4 @@
-import { r as registerInstance, k as config, e as getIonMode, h, H as Host } from './core-d377b9a5.js';
+import { r as registerInstance, l as config, f as getIonMode, h, H as Host } from './core-6682cc20.js';
 import { c as createColorClasses } from './theme-215399f6.js';
 import { c as clamp } from './helpers-45f2b621.js';
 var ProgressBar = /** @class */ (function () {

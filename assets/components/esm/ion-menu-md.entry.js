@@ -1,4 +1,4 @@
-import { r as registerInstance, e as getIonMode, c as createEvent, k as config, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, f as getIonMode, c as createEvent, l as config, h, H as Host, e as getElement } from './core-6682cc20.js';
 import './animation-ed5fbd06.js';
 import { GESTURE_CONTROLLER } from './index-9b8e1c51.js';
 import { i as isEndSide, b as assert } from './helpers-45f2b621.js';

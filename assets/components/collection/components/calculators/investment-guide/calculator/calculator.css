@@ -2,16 +2,7 @@
     padding: 0 10px;
 }
 
-.chart-spinner{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    top: 0;
-}
+
 
 .ion-invalid {
     --border-color: var(--highlight-color-invalid);
@@ -25,4 +16,10 @@
     --min-height: 20px;
     font-size: 80%;
     color: var(--ion-color-danger);
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }

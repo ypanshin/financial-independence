@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, w as writeTask, e as getIonMode, h, d as getElement, H as Host } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, w as writeTask, f as getIonMode, h, e as getElement, H as Host } from './core-6682cc20.js';
 
 const Refresher = class {
     constructor(hostRef) {

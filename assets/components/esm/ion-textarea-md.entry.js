@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, j as readTask, e as getIonMode, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, k as readTask, f as getIonMode, h, H as Host, e as getElement } from './core-6682cc20.js';
 import { c as createColorClasses } from './theme-215399f6.js';
 import { d as debounceEvent, f as findItemLabel } from './helpers-45f2b621.js';
 

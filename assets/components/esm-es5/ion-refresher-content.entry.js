@@ -1,4 +1,4 @@
-import { r as registerInstance, k as config, e as getIonMode, h, H as Host } from './core-d377b9a5.js';
+import { r as registerInstance, l as config, f as getIonMode, h, H as Host } from './core-6682cc20.js';
 import { s as sanitizeDOMString } from './index-d6bd1e69.js';
 var RefresherContent = /** @class */ (function () {
     function RefresherContent(hostRef) {

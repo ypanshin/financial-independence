@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, e as getIonMode, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, f as getIonMode, h, H as Host, e as getElement } from './core-6682cc20.js';
 import { h as hostContext, o as openURL, c as createColorClasses } from './theme-215399f6.js';
 
 const FabButton = class {

@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, e as getIonMode, h, d as getElement, H as Host } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, f as getIonMode, h, e as getElement, H as Host } from './core-6682cc20.js';
 var SPLIT_PANE_MAIN = 'split-pane-main';
 var SPLIT_PANE_SIDE = 'split-pane-side';
 var QUERY = {

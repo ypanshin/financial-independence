@@ -1,4 +1,4 @@
-import { r as registerInstance } from './core-d377b9a5.js';
+import { r as registerInstance } from './core-6682cc20.js';
 import './animation-ed5fbd06.js';
 import { m as menuController } from './index-0a82db46.js';
 

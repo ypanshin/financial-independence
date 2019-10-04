@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import { r as registerInstance, e as getIonMode, k as config, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, f as getIonMode, l as config, h, H as Host, e as getElement } from './core-6682cc20.js';
 import { o as openURL, c as createColorClasses } from './theme-215399f6.js';
 var BackButton = /** @class */ (function () {
     function class_1(hostRef) {

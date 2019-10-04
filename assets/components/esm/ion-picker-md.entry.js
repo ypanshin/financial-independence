@@ -1,5 +1,5 @@
-import { r as registerInstance, e as getIonMode, c as createEvent, h, H as Host, d as getElement } from './core-d377b9a5.js';
-import { p as prepareOverlay, a as present, d as dismiss, e as eventMethod, s as safeCall } from './overlays-c7dfdb33.js';
+import { r as registerInstance, f as getIonMode, c as createEvent, h, H as Host, e as getElement } from './core-6682cc20.js';
+import { p as prepareOverlay, a as present, d as dismiss, e as eventMethod, s as safeCall } from './overlays-9a81ebba.js';
 import { g as getClassMap } from './theme-215399f6.js';
 import { c as createAnimation } from './animation-ed5fbd06.js';
 

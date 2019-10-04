@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, k as config, e as getIonMode, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, l as config, f as getIonMode, h, H as Host, e as getElement } from './core-6682cc20.js';
 var TabButton = /** @class */ (function () {
     function TabButton(hostRef) {
         var _this = this;

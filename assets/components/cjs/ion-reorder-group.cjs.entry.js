@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const core = require('./core-0c2b188e.js');
+const core = require('./core-2f872d47.js');
 const haptic = require('./haptic-2f638257.js');
 
 const ReorderGroup = class {

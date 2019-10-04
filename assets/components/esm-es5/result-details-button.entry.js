@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, h, H as Host, e as getElement } from './core-6682cc20.js';
 var ResultDetailsButton = /** @class */ (function () {
     function ResultDetailsButton(hostRef) {
         registerInstance(this, hostRef);

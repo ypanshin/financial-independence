@@ -8,11 +8,11 @@ export class RRSPForm {
             h("ion-card", null,
                 h("ion-card-header", null,
                     h("ion-card-title", null, "RRSP Details")),
-                h("ion-item", null,
+                h("ion-item", { class: "item-multiple-inputs" },
                     h("ion-checkbox", { slot: "start", checked: this.reinvestTaxReturn, onIonChange: this.handleChange.bind(this) }),
                     h("ion-label", null, "Reinvest Tax Return"),
                     h("budgific-ig-info-button", { slot: "end" },
-                        h("p", null, "Reinvest the tax return."))))));
+                        h("p", null, "The best approach is to reinvest the tax return that you receive when contributing to RRSP."))))));
     }
     static get is() { return "budgific-ig-rrsp-form"; }
     static get encapsulation() { return "shadow"; }

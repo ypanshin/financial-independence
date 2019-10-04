@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import { r as registerInstance, c as createEvent, e as getIonMode, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, f as getIonMode, h, H as Host, e as getElement } from './core-6682cc20.js';
 import { c as clamp } from './helpers-45f2b621.js';
 import { a as hapticSelectionChanged } from './haptic-238f7b9d.js';
 var PickerColumnCmp = /** @class */ (function () {

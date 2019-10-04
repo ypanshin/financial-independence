@@ -1,4 +1,4 @@
-import { r as registerInstance, e as getIonMode, h, H as Host } from './core-d377b9a5.js';
+import { r as registerInstance, f as getIonMode, h, H as Host } from './core-6682cc20.js';
 import './animation-ed5fbd06.js';
 import { m as menuController } from './index-0a82db46.js';
 import { u as updateVisibility } from './menu-toggle-util-e7845e20.js';

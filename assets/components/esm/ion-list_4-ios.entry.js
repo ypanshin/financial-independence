@@ -1,4 +1,4 @@
-import { r as registerInstance, e as getIonMode, h, d as getElement, H as Host, c as createEvent } from './core-d377b9a5.js';
+import { r as registerInstance, f as getIonMode, h, e as getElement, H as Host, c as createEvent } from './core-6682cc20.js';
 import { c as createColorClasses, h as hostContext } from './theme-215399f6.js';
 import { f as findItemLabel } from './helpers-45f2b621.js';
 import { f as findCheckedOption, w as watchForOptions } from './watch-options-ac14b122.js';

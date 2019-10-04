@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const core = require('./core-0c2b188e.js');
+const core = require('./core-2f872d47.js');
 const helpers = require('./helpers-1ac76030.js');
 
 const ROUTER_INTENT_NONE = 'root';

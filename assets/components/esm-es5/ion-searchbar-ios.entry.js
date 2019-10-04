@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import { r as registerInstance, c as createEvent, e as getIonMode, k as config, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, f as getIonMode, l as config, h, H as Host, e as getElement } from './core-6682cc20.js';
 import { s as sanitizeDOMString } from './index-d6bd1e69.js';
 import { c as createColorClasses } from './theme-215399f6.js';
 import { d as debounceEvent } from './helpers-45f2b621.js';

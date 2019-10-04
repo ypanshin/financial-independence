@@ -1,4 +1,4 @@
-import { r as registerInstance, e as getIonMode, k as config, h, H as Host } from './core-d377b9a5.js';
+import { r as registerInstance, f as getIonMode, l as config, h, H as Host } from './core-6682cc20.js';
 import { s as sanitizeDOMString } from './index-d6bd1e69.js';
 var InfiniteScrollContent = /** @class */ (function () {
     function InfiniteScrollContent(hostRef) {

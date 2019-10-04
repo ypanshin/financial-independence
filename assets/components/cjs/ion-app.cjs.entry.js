@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const core = require('./core-0c2b188e.js');
+const core = require('./core-2f872d47.js');
 const helpers = require('./helpers-1ac76030.js');
 
 const App = class {
@@ -17,7 +17,7 @@ const App = class {
                     new Promise(function (resolve) { resolve(require('./tap-click-8b243d86.js')); }).then(module => module.startTapClick(core.config));
                 }
                 if (core.config.getBoolean('statusTap', isHybrid)) {
-                    new Promise(function (resolve) { resolve(require('./status-tap-6aa39899.js')); }).then(module => module.startStatusTap());
+                    new Promise(function (resolve) { resolve(require('./status-tap-3a23dca9.js')); }).then(module => module.startStatusTap());
                 }
                 if (core.config.getBoolean('inputShims', needInputShims())) {
                     new Promise(function (resolve) { resolve(require('./input-shims-c1e9eca5.js')); }).then(module => module.startInputShims(core.config));

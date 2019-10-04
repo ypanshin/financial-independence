@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, e as getElement } from './core-6682cc20.js';
 import { e as debounce } from './helpers-45f2b621.js';
 
 const ROUTER_INTENT_NONE = 'root';

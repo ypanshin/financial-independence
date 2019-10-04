@@ -1,4 +1,4 @@
-import { r as registerInstance, h, e as getIonMode, H as Host, c as createEvent, l as isPlatform, j as readTask, k as config, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, h, f as getIonMode, H as Host, c as createEvent, m as isPlatform, k as readTask, l as config, e as getElement } from './core-6682cc20.js';
 import { c as createColorClasses, h as hostContext } from './theme-215399f6.js';
 
 const Buttons = class {

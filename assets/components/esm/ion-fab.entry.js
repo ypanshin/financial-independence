@@ -1,4 +1,4 @@
-import { r as registerInstance, e as getIonMode, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, f as getIonMode, h, H as Host, e as getElement } from './core-6682cc20.js';
 
 const Fab = class {
     constructor(hostRef) {

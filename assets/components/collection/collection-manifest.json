@@ -1,20 +1,23 @@
 {
   "entries": [
     "components/calculators/investment-guide/accounts-form/accounts-form.js",
-    "components/calculators/investment-guide/general-form/general-form.js",
-    "components/calculators/investment-guide/info-popover/info-button/info-button.js",
+    "components/calculators/investment-guide/calculator/result-details/result-details-button/result-details-button.js",
+    "components/calculators/investment-guide/calculator/result-details/result-details.js",
     "components/calculators/investment-guide/info-popover/info-popover.js",
+    "components/calculators/investment-guide/info-popover/info-button/info-button.js",
+    "components/calculators/investment-guide/rrsp-form/rrsp-form.js",
+    "components/calculators/investment-guide/calculator/schedule/schedule.js",
+    "components/calculators/investment-guide/calculator/schedule-chart/schedule-chart.js",
+    "components/calculators/investment-guide/calculator/schedule-table/schedule-table.js",
+    "components/calculators/investment-guide/general-form/general-form.js",
     "components/calculators/investment-guide/investment-guide.js",
     "components/calculators/investment-guide/mortgage-form/mortgage-form.js",
     "components/calculators/investment-guide/stepper-item/stepper-item.js",
-    "components/calculators/investment-guide/rrsp-form/rrsp-form.js",
-    "components/calculators/investment-guide/calculator/calculator.js",
-    "components/calculators/investment-guide/calculator/result-details/result-details.js",
-    "components/calculators/investment-guide/calculator/result-details/result-details-button/result-details-button.js"
+    "components/calculators/investment-guide/calculator/calculator.js"
   ],
   "compiler": {
     "name": "@stencil/core",
-    "version": "1.5.1",
+    "version": "1.5.4",
     "typescriptVersion": "3.6.3"
   },
   "collections": [

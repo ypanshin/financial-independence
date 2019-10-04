@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import { r as registerInstance, c as createEvent, w as writeTask, j as readTask, e as getIonMode, h, d as getElement, H as Host } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, w as writeTask, k as readTask, f as getIonMode, h, e as getElement, H as Host } from './core-6682cc20.js';
 var InfiniteScroll = /** @class */ (function () {
     function class_1(hostRef) {
         var _this = this;

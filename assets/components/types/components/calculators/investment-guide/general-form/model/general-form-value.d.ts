@@ -1,5 +1,4 @@
-import { INonRegisteredValue } from "../../calculator/model/non-registered-data";
-export interface IGeneralFormValue extends INonRegisteredValue {
+export interface IGeneralFormValue {
     /**
      * The current marginal tax rate
      */

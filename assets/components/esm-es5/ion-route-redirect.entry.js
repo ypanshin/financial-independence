@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent } from './core-6682cc20.js';
 var RouteRedirect = /** @class */ (function () {
     function RouteRedirect(hostRef) {
         registerInstance(this, hostRef);

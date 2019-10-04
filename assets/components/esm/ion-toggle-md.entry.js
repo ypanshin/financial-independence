@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, e as getIonMode, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, f as getIonMode, h, H as Host, e as getElement } from './core-6682cc20.js';
 import { c as createColorClasses, h as hostContext } from './theme-215399f6.js';
 import { f as findItemLabel, r as renderHiddenInput } from './helpers-45f2b621.js';
 import { c as hapticSelection } from './haptic-238f7b9d.js';

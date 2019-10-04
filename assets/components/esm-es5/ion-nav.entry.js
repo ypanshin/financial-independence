@@ -34,10 +34,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import { r as registerInstance, c as createEvent, e as getIonMode, k as config, h, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, f as getIonMode, l as config, h, e as getElement } from './core-6682cc20.js';
 import { b as assert } from './helpers-45f2b621.js';
 import { a as attachComponent } from './framework-delegate-edc3d751.js';
-import { l as lifecycle, t as transition, s as setPageHidden, L as LIFECYCLE_WILL_UNLOAD, a as LIFECYCLE_WILL_LEAVE, b as LIFECYCLE_DID_LEAVE } from './index-e7d87ec1.js';
+import { l as lifecycle, t as transition, s as setPageHidden, L as LIFECYCLE_WILL_UNLOAD, a as LIFECYCLE_WILL_LEAVE, b as LIFECYCLE_DID_LEAVE } from './index-5e2148a3.js';
 import { g as getTimeGivenProgression, P as Point } from './cubic-bezier-14db00af.js';
 var VIEW_STATE_NEW = 1;
 var VIEW_STATE_ATTACHED = 2;

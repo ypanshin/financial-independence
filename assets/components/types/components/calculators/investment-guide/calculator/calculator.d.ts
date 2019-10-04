@@ -1,15 +1,10 @@
 import '@ionic/core';
 import { EventEmitter } from '../../../../stencil.core';
-import Chart from 'chart.js';
-import { TFSAData } from './model/tfsa-data';
-import { RRSPData } from './model/rrsp-data';
-import { NonRegisteredData } from './model/non-registered-data';
-import { MortgageData } from './model/mortgage-data';
-import { AccountType } from '../model/account-type';
-import { CalculatorData } from './model/calculator-data';
 import { IInvestmentGuideValue, InvestmentGuideValueKey } from '../model/investment-guide-value';
 import { GeneralFormValueKey } from '../general-form/model/general-form-value';
 import { MortgageFormValueKey } from '../mortgage-form/model/mortgage-form-value';
+import { WebWorkerProxy } from './web-worker/web-worker-proxy';
+import { ICalculatorData, CalculatorResult } from 'budgific-web-workers';
 declare const ValueKey: {
     mortgageRate: MortgageFormValueKey.mortgageRate;
     mortgageBalance: MortgageFormValueKey.mortgageBalance;
@@ -30,12 +25,9 @@ export declare class Calculator {
      * The value
      */
     value: IInvestmentGuideValue;
+    private publicPath;
     valueChange: EventEmitter;
     configClick: EventEmitter;
-    mortgageData: MortgageData;
-    tfsaData: TFSAData;
-    rrspData: RRSPData;
-    nonRegisteredData: NonRegisteredData;
     options: {
         [ValueKey.investmentHorizon]: boolean;
         [ValueKey.investmentRate]: boolean;
@@ -46,27 +38,25 @@ export declare class Calculator {
         [ValueKey.mortgageRate]: boolean;
         [ValueKey.reinvestTaxReturn]: boolean;
     };
-    chartOptions: Chart.ChartConfiguration;
+    rrspFutureValue: number;
+    tfsaFutureValue: number;
+    mortgageFutureValue: number;
+    nonRegisteredFutureValue: number;
+    rrspData: ICalculatorData;
+    tfsaData: ICalculatorData;
+    mortgageData: ICalculatorData;
+    nonRegisteredData: ICalculatorData;
     data: IInvestmentGuideValue;
     errors: {
         [key: string]: number;
     };
-    graphLabels: string[];
-    charts: HTMLCanvasElement;
-    barChart: Chart;
+    loading: boolean;
     today: number;
+    workerProxy: WebWorkerProxy;
     dataWatchHandler(newValue: IInvestmentGuideValue): void;
+    componentWillLoad(): void;
     componentDidLoad(): void;
-    componentDidRender(): void;
-    private processData;
-    processGraphData(): void;
-    createDataset(type: AccountType, data: number[]): {
-        label: string;
-        data: number[];
-        backgroundColor: string;
-        borderColor: string;
-        fill: boolean;
-    };
+    processData(data: CalculatorResult): void;
     isValid(value: number, key: ValueKey): boolean;
     handleAmountChange(e: CustomEvent): void;
     handleStepperPercentChange(key: InvestmentGuideValueKey, e: CustomEvent): void;
@@ -74,11 +64,10 @@ export declare class Calculator {
     handleReinvestTaxReturnChange(e: CustomEvent): void;
     percent(key: ValueKey): number;
     presentAlertCheckbox(): Promise<void>;
-    currency(amount: number): string;
     render(): any;
     renderCalculator(): any;
     renderRRSPReinvestTaxReturnItem(): any[];
-    renderFutureValue(data: CalculatorData<any>): any;
+    renderFutureValue(value: number): any;
     renderMortgageItem(show: boolean): any;
     renderTFSAItem(show: boolean): any;
     renderRRSPItem(show: boolean): any;
@@ -86,6 +75,5 @@ export declare class Calculator {
     renderPercentStepper(label: string, key: ValueKey, step: number, min: number, max: number): any;
     renderNumberStepper(label: string, key: ValueKey, step: number, min: number, max: number): any;
     renderError(key: ValueKey): any;
-    showChart(): "inherit" | "hidden";
 }
 export {};

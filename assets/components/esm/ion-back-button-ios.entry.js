@@ -1,4 +1,4 @@
-import { r as registerInstance, e as getIonMode, k as config, h, H as Host, d as getElement } from './core-d377b9a5.js';
+import { r as registerInstance, f as getIonMode, l as config, h, H as Host, e as getElement } from './core-6682cc20.js';
 import { o as openURL, c as createColorClasses } from './theme-215399f6.js';
 
 const BackButton = class {

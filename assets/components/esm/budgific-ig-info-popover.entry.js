@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './core-d377b9a5.js';
+import { r as registerInstance, h } from './core-6682cc20.js';
 
 const InfoPopover = class {
     constructor(hostRef) {

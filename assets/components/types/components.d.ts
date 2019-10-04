@@ -18,6 +18,9 @@ import {
 import {
   IMortgageFormValue,
 } from './components/calculators/investment-guide/mortgage-form/model/mortgage-form-value';
+import {
+  ICalculatorData,
+} from 'budgific-web-workers';
 
 export namespace Components {
   interface BudgificIgAccountsForm {
@@ -51,6 +54,27 @@ export namespace Components {
     * The reinvest tax return
     */
     'reinvestTaxReturn': boolean;
+  }
+  interface BudgificIgSchedule {
+    'loading': boolean;
+    'mortgage': ICalculatorData;
+    'nonRegistered': ICalculatorData;
+    'rrsp': ICalculatorData;
+    'tfsa': ICalculatorData;
+  }
+  interface BudgificIgScheduleChart {
+    'loading': boolean;
+    'mortgage': number[];
+    'nonRegistered': number[];
+    'rrsp': number[];
+    'tfsa': number[];
+  }
+  interface BudgificIgScheduleTable {
+    'loading': boolean;
+    'mortgage': number[];
+    'nonRegistered': number[];
+    'rrsp': number[];
+    'tfsa': number[];
   }
   interface BudgificIgStepperItem {
     'constraint': any;
@@ -115,6 +139,24 @@ declare global {
     new (): HTMLBudgificIgRrspFormElement;
   };
 
+  interface HTMLBudgificIgScheduleElement extends Components.BudgificIgSchedule, HTMLStencilElement {}
+  var HTMLBudgificIgScheduleElement: {
+    prototype: HTMLBudgificIgScheduleElement;
+    new (): HTMLBudgificIgScheduleElement;
+  };
+
+  interface HTMLBudgificIgScheduleChartElement extends Components.BudgificIgScheduleChart, HTMLStencilElement {}
+  var HTMLBudgificIgScheduleChartElement: {
+    prototype: HTMLBudgificIgScheduleChartElement;
+    new (): HTMLBudgificIgScheduleChartElement;
+  };
+
+  interface HTMLBudgificIgScheduleTableElement extends Components.BudgificIgScheduleTable, HTMLStencilElement {}
+  var HTMLBudgificIgScheduleTableElement: {
+    prototype: HTMLBudgificIgScheduleTableElement;
+    new (): HTMLBudgificIgScheduleTableElement;
+  };
+
   interface HTMLBudgificIgStepperItemElement extends Components.BudgificIgStepperItem, HTMLStencilElement {}
   var HTMLBudgificIgStepperItemElement: {
     prototype: HTMLBudgificIgStepperItemElement;
@@ -146,6 +188,9 @@ declare global {
     'budgific-ig-info-popover': HTMLBudgificIgInfoPopoverElement;
     'budgific-ig-mortgage-form': HTMLBudgificIgMortgageFormElement;
     'budgific-ig-rrsp-form': HTMLBudgificIgRrspFormElement;
+    'budgific-ig-schedule': HTMLBudgificIgScheduleElement;
+    'budgific-ig-schedule-chart': HTMLBudgificIgScheduleChartElement;
+    'budgific-ig-schedule-table': HTMLBudgificIgScheduleTableElement;
     'budgific-ig-stepper-item': HTMLBudgificIgStepperItemElement;
     'budgific-investment-guide': HTMLBudgificInvestmentGuideElement;
     'result-details': HTMLResultDetailsElement;
@@ -192,6 +237,27 @@ declare namespace LocalJSX {
     */
     'reinvestTaxReturn'?: boolean;
   }
+  interface BudgificIgSchedule {
+    'loading'?: boolean;
+    'mortgage'?: ICalculatorData;
+    'nonRegistered'?: ICalculatorData;
+    'rrsp'?: ICalculatorData;
+    'tfsa'?: ICalculatorData;
+  }
+  interface BudgificIgScheduleChart {
+    'loading'?: boolean;
+    'mortgage'?: number[];
+    'nonRegistered'?: number[];
+    'rrsp'?: number[];
+    'tfsa'?: number[];
+  }
+  interface BudgificIgScheduleTable {
+    'loading'?: boolean;
+    'mortgage'?: number[];
+    'nonRegistered'?: number[];
+    'rrsp'?: number[];
+    'tfsa'?: number[];
+  }
   interface BudgificIgStepperItem {
     'constraint'?: any;
     'label'?: string;
@@ -219,6 +285,9 @@ declare namespace LocalJSX {
     'budgific-ig-info-popover': BudgificIgInfoPopover;
     'budgific-ig-mortgage-form': BudgificIgMortgageForm;
     'budgific-ig-rrsp-form': BudgificIgRrspForm;
+    'budgific-ig-schedule': BudgificIgSchedule;
+    'budgific-ig-schedule-chart': BudgificIgScheduleChart;
+    'budgific-ig-schedule-table': BudgificIgScheduleTable;
     'budgific-ig-stepper-item': BudgificIgStepperItem;
     'budgific-investment-guide': BudgificInvestmentGuide;
     'result-details': ResultDetails;
@@ -239,6 +308,9 @@ declare module "@stencil/core" {
       'budgific-ig-info-popover': LocalJSX.BudgificIgInfoPopover & JSXBase.HTMLAttributes<HTMLBudgificIgInfoPopoverElement>;
       'budgific-ig-mortgage-form': LocalJSX.BudgificIgMortgageForm & JSXBase.HTMLAttributes<HTMLBudgificIgMortgageFormElement>;
       'budgific-ig-rrsp-form': LocalJSX.BudgificIgRrspForm & JSXBase.HTMLAttributes<HTMLBudgificIgRrspFormElement>;
+      'budgific-ig-schedule': LocalJSX.BudgificIgSchedule & JSXBase.HTMLAttributes<HTMLBudgificIgScheduleElement>;
+      'budgific-ig-schedule-chart': LocalJSX.BudgificIgScheduleChart & JSXBase.HTMLAttributes<HTMLBudgificIgScheduleChartElement>;
+      'budgific-ig-schedule-table': LocalJSX.BudgificIgScheduleTable & JSXBase.HTMLAttributes<HTMLBudgificIgScheduleTableElement>;
       'budgific-ig-stepper-item': LocalJSX.BudgificIgStepperItem & JSXBase.HTMLAttributes<HTMLBudgificIgStepperItemElement>;
       'budgific-investment-guide': LocalJSX.BudgificInvestmentGuide & JSXBase.HTMLAttributes<HTMLBudgificInvestmentGuideElement>;
       'result-details': LocalJSX.ResultDetails & JSXBase.HTMLAttributes<HTMLResultDetailsElement>;

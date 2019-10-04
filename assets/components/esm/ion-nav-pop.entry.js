@@ -1,4 +1,4 @@
-import { r as registerInstance, h, d as getElement, H as Host } from './core-d377b9a5.js';
+import { r as registerInstance, h, e as getElement, H as Host } from './core-6682cc20.js';
 import { n as navLink } from './nav-link-utils-8805b760.js';
 
 const NavPop = class {

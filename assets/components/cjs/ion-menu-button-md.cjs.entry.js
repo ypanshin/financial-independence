@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const core = require('./core-0c2b188e.js');
+const core = require('./core-2f872d47.js');
 const theme = require('./theme-eb1a6de3.js');
 require('./animation-a07c3c86.js');
 const index = require('./index-bf27bf2f.js');

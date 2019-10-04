@@ -1,9 +1,9 @@
-import { r as registerInstance, e as getIonMode, c as createEvent, h, H as Host, d as getElement } from './core-d377b9a5.js';
-import { B as BACKDROP, p as prepareOverlay, a as present, d as dismiss, e as eventMethod } from './overlays-c7dfdb33.js';
+import { r as registerInstance, f as getIonMode, c as createEvent, h, H as Host, e as getElement } from './core-6682cc20.js';
+import { B as BACKDROP, p as prepareOverlay, a as present, d as dismiss, e as eventMethod } from './overlays-9a81ebba.js';
 import { g as getClassMap } from './theme-215399f6.js';
 import { c as createAnimation } from './animation-ed5fbd06.js';
 import { a as attachComponent, d as detachComponent } from './framework-delegate-edc3d751.js';
-import { d as deepReady } from './index-e7d87ec1.js';
+import { d as deepReady } from './index-5e2148a3.js';
 
 /**
  * iOS Modal Enter Animation

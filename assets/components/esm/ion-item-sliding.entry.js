@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, e as getIonMode, h, d as getElement, H as Host } from './core-d377b9a5.js';
+import { r as registerInstance, c as createEvent, f as getIonMode, h, e as getElement, H as Host } from './core-6682cc20.js';
 import { i as isEndSide } from './helpers-45f2b621.js';
 
 const SWIPE_MARGIN = 30;
