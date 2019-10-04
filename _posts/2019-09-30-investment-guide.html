@@ -14,7 +14,28 @@ This calculator will help you to make decision where to invest available funds, 
 
 <!--more-->
 <p>
-On the first screen you should enter required details for the calculation. On the second screen you will be able to play with parameters to see how the parameter affect on the final result.
+    On the first screen, you should enter the required details for the calculation. On the second screen, you will be
+    able to play with parameters to see how the parameters affect the final result.
 </p>
-<script src='/assets/components/budgific.js'></script>
+<script type="module" src="/assets/components/budgific/budgific.esm.js"></script>
+<script nomodule="" src="/assets/components/budgific/budgific.js"></script>
 <budgific-investment-guide></budgific-investment-guide>
+<h5>Mortgage</h5>
+<p>
+    The mortgage interest calculated by comparing two amortization schedules, with the amount as a lump payment and
+    without. In addition, every month the inflation rate is reduced from the difference of the interest payments and
+    added the initial amount.
+</p>
+<p>
+    Monthly Difference = Interest Payment - Interest Payment with Lump Payment - Inflation + Amount
+</p>
+<h5>RRSP</h5>
+<p>
+    The RRSP investment amount is different from other account types as when you select reinvest the Tax Return, the Tax
+    Return based on Marginal Tax Rate is added to the amount. The Gain is reduced by the retirement
+    (horizon) effective tax rate.
+</p>
+<h5>Non Registered</h5>
+<p>
+    The gain is reduced by a half of the retirement (horizon) marginal tax rate.
+</p>
