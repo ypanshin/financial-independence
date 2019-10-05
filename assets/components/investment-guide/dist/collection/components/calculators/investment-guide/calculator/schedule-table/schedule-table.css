@@ -1,0 +1,12 @@
+:host{
+    display: block;
+    overflow: overlay;
+}
+ion-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    min-width: max-content;
+}
+
+ion-col>div{
+    white-space: nowrap;
+}
